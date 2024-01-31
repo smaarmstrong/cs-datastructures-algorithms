@@ -1,5 +1,39 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+// SECTION 4
+// Arrays
+// Array Deletions
+int[] intArray = new int[9];
+
+int length = 0;
+
+for (int i = 0; i < 6; i++)
+{
+    intArray[length] = i;
+    length++;
+}
+
+for (int i = 4; i < length; i++)
+{
+    intArray[i - 1] = intArray[i];
+}
+
+length--;
+
+for (int i = 0; i < length; i++)
+{
+    Console.WriteLine(intArray[i]);
+}
+
+//length--;
+
+//for(int i  = 1; i < length; i++)
+//{
+//    intArray[i - 1] = intArray[i];
+//}
+
+//length--;
+
 // SECTION 3
 
 /*
@@ -18,7 +52,7 @@ in C#
 */
 
 //Arrays
-//Array Insertions & Deletions
+//Array Insertions
 
 //Insert at the end of an array
 //using cs_datastructures_algorithms.ADT;
