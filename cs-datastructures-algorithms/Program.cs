@@ -1,29 +1,52 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+// SECTION 5
+// Arrays
+// Linear Search
+// 1. for loop to search
+// 2. if statement to check
+int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Key means what value we are searching for
+bool LinearSearch(int[] array, int key)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] == key)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+//Console.WriteLine(LinearSearch(array, 0));
+Console.WriteLine(LinearSearch(array, 4));
+
 // SECTION 4
 // Arrays
 // Array Deletions
-int[] intArray = new int[9];
+//int[] intArray = new int[9];
 
-int length = 0;
+//int length = 0;
 
-for (int i = 0; i < 6; i++)
-{
-    intArray[length] = i;
-    length++;
-}
+//for (int i = 0; i < 6; i++)
+//{
+//    intArray[length] = i;
+//    length++;
+//}
 
-for (int i = 4; i < length; i++)
-{
-    intArray[i - 1] = intArray[i];
-}
+//for (int i = 4; i < length; i++)
+//{
+//    intArray[i - 1] = intArray[i];
+//}
 
-length--;
+//length--;
 
-for (int i = 0; i < length; i++)
-{
-    Console.WriteLine(intArray[i]);
-}
+//for (int i = 0; i < length; i++)
+//{
+//    Console.WriteLine(intArray[i]);
+//}
 
 //length--;
 
